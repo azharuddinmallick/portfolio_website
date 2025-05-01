@@ -1,205 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Azhar Uddin Mallick</title>
+</head>
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Portfolio website complete</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Azhar Uddin Mallick</a>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">AZHAR</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__itemm">
+                        <a href="#home" class="nav__link active-link"><i class="ri-home-line"></i> Home</a>
+                    </li>
+                    <li class="nav__itemm">
+                        <a href="#skills" class="nav__link"><i class="ri-code-line"></i> Skills</a>
+                    </li>
+                    <li class="nav__itemm">
+                        <a href="#qualification" class="nav__link"><i class="ri-book-line"></i> Qualifications</a>
+                    </li>
+                    <li class="nav__itemm">
+                        <a href="#achievements" class="nav__link"><i class="ri-trophy-line"></i> Achievements</a>
+                    </li>
+                    <li class="nav__itemm">
+                        <a href="#projects" class="nav__link"><i class="ri-macbook-line"></i> Projects</a>
+                    </li>
+                    <li class="nav__itemm">
+                        <a href="#contact" class="nav__link"><i class="ri-chat-4-line"></i> Contact Me</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
                 </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </div>
+            <div class="nav__buttons">
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home__container container grid section__border">
+                <div class="home__data grid">
+                    <h1 class="home__title">Hi, I'm Abhi Ram <br> Frontend Developer <br> Based in Russia <br></h1>
+                    <div class="home__blob grid">
+                        <div class="home__perfil">
+                            <img src="PF.jpg" alt="home perfil">
+                        </div>
+                        <img src="assets/img/shape-wawes.svg" alt="" class="home__shape-wawes">
+                        <img src="assets/img/shape-circle.svg" alt="" class="home__shape-circle">
+                    </div>
+                    <ul class="home__social">
+                        <a href="#" target="_blank" class="home__social-link"><i class="ri-linkedin-box-line"></i></a>
+                        <a href="#" target="_blank" class="home__social-link"><i class="ri-github-line"></i></a>
+                        <a href="#" target="_blank" class="home__social-link"><i class="ri-twitter-line"></i></a>
                     </ul>
                 </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Azhar</span><br> Aspiring Web Dev</h1>
-
-                    <a href="https://www.linkedin.com/in/azhar-uddin-mallick/" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/azhar-uddin-mallick/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/azharuddinmallick" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://x.com/AzharUddin4251" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
-                   
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="assets/img/profile 1.JPG"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/profile 2.JPG" alt="">
+                <div class="home__info">
+                    <div>
+                        <h3 class="home__info-title">BIOGRAPHY</h3>
+                        <p class="home__info-description">Hi, I'm Abhi Ram Tej, Frontend Developer. Passionate about
+                            creating wonderful and interactive websites.</p>
                     </div>
-                    
                     <div>
-                        <h2 class="about__subtitle">I'am Azhar Uddin Mallick</h2>
-                        <p class="about__text">I am a dedicated college student with a passion for cloud infrastructure and a clear vision of becoming a successful DevOps engineer. Currently, I am immersed in learning various cloud technologies and gaining hands-on experience in managing and deploying scalable applications. My goal is to leverage my knowledge and skills to streamline development processes and enhance operational efficiency in dynamic and innovative environments.</p>           
-                    </div>                                   
+                        <h3 class="home__info-title">CONTACT</h3>
+                        <p class="home__info-description">Russia <br> contactme@gmail.com <br> +123 456 7890 <br></p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">ACHIEVEMENTS</h3>
+                        <p class="home__info-description">Selected as - Google Intern <br> Selected as - Amazon Full
+                            Time Developer<br></p>
+                    </div>
                 </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
+                <div class="home__info">
                     <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <p class="skills__text">Highly motivated student pursuing a career in DevOps engineering. Eager to leverage my academic foundation in Cloud computing to gain practical experience through an internship. Possess strong problem-solving skills and a passion for automating processes to improve development workflows.</p>
+                        <h3 class="home__info-title">GRADUATED</h3>
+                        <p class="home__info-number">2022</p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">COMPLETED PROJECTS</h3>
+                        <p class="home__info-number">15+</p>
+                    </div>
+                    <div>
+                        <h3 class="home__info-title">COMPANIES WORKED FOR</h3>
+                        <p class="home__info-number">2+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">Experience</span>
+            <div class="skills__container container grid section__border">
+                <div class="skills__content">
+                    <h3 class="skills__title"><i class="ri-braces-line"></i> Software Developer</h3>
+                    <div class="skills__info">
                         <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=''></i>
-                                <span class="skills__name"> Linux, Networking, Virtualization, Go, Automation</span>
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-java-120.svg" alt="skills image">
                             </div>
-                            <div class="skills__bar skills__html">
-
-                            </div>
-                            
-                    
+                            <h3 class="skills__name">Java</h3>
+                            <span class="skills__subtitle">Advanced</span>
                         </div>
                         <div class="skills__data">
-                            <div class="skills__names">
-                                <i class=''></i>
-                                <span class="skills__name"> JSON, Git, Github, AWS, Terraform, CI/CD, Ansible</span>
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-android-studio-100.svg" alt="skills image">
                             </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                          
-                        </div>
-                        
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='' ></i>
-                                <span class="skills__name">Docker, Maven, Kubernetes, Jenkins, Nginx</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                           
+                            <h3 class="skills__name">Android</h3>
+                            <span class="skills__subtitle">Intermediate</span>
                         </div>
                         <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">"My abilities are progressively improving and expanding as time goes on."</span>
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-flutter-120.svg" alt="skills image">
                             </div>
-                            <div class="skills__bar skills__ux">
-                                
+                            <h3 class="skills__name">Flutter</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-google-firebase-console-120.svg" alt="skills image">
                             </div>
+                            <h3 class="skills__name">Firebase</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Git</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content">
+                    <h3 class="skills__title"><i class="ri-braces-line"></i> Computer Fundamentals</h3>
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-binary-code-100.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">DSA</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-plugin-100.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">OOPS</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-database-100.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">DBMS</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-console-100.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">OS</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/icons8-multicast-100.png" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">CN</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="qualification section" id="qualification">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">Experience and Education</span>
+            <div class="qualification__container container grid section__border">
+                <div class="qualification__content">
+                    <h3 class="qualification__title"><i class="ri-book-line"></i> Education</h3>
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">Bachelor Of Technology [B.TECH]</h3>
+                            <span class="qualification__country">University Of New World</span>
+                            <span class="qualification__year">2015 - 2020</span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">Junior College</h3>
+                            <span class="qualification__country">New World Junior College</span>
+                            <span class="qualification__year">2013 - 2015</span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">High School</h3>
+                            <span class="qualification__country">New World High School</span>
+                            <span class="qualification__year">2001 - 2013</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualification__content">
+                    <h3 class="qualification__title"><i class="ri-building-line"></i> Experience</h3>
+                    <div class="qualification__info">
+                        <div>
+                            <h3 class="qualification__name">Web Developer</h3>
+                            <span class="qualification__country">google</span>
+                            <span class="qualification__year">Feb 2021 - May 2022</span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">Full Stack Developer</h3>
+                            <span class="qualification__country">Amazon</span>
+                            <span class="qualification__year">Oct 2022 - Mar 2023</span>
+                        </div>
+                        <div>
+                            <h3 class="qualification__name">SDE Full Time</h3>
+                            <span class="qualification__country">Microsoft</span>
+                            <span class="qualification__year">Sep 2023 - Present</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/shape-circle.svg" alt="qualification image" class="qualification__img">
+        </section>
+        <section class="achievements section" id="achievements">
+            <h2 class="section__title">Achievements</h2>
+            <span class="section__subtitle">What makes me stand out</span>
+            <div class="achievements__container container grid section__border">
+                <div class="achievements__card">
+                    <i class="ri-trophy-line"></i>
+                    <h2 class="achievements__title">Winner <br> Summer Amazon Hackathon</h2>
+                    <p class="achievements__description">Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
+                    </p>
+                    <div class="achievements__border"></div>
+                </div>
+                <div class="achievements__card">
+                    <i class="ri-trophy-line"></i>
+                    <h2 class="achievements__title">Winner <br> Summer Amazon Hackathon</h2>
+                    <p class="achievements__description">Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
+                    </p>
+                    <div class="achievements__border"></div>
+                </div>
+                <div class="achievements__card">
+                    <i class="ri-trophy-line"></i>
+                    <h2 class="achievements__title">Winner <br> Summer Amazon Hackathon</h2>
+                    <p class="achievements__description">Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
+                    </p>
+                    <div class="achievements__border"></div>
+                </div>
+            </div>
+        </section>
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">My personal projects</span>
+            <div class="container section__border">
+                <div class="projects__container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="projects__content swiper-slide">
+                            <img src="TRAVEL.png" alt="projects image" class="projects__img">
                             <div>
-                                <span class="skills__percentage"></span>
+                                <span class="projects__subtitle">Fullstack</span>
+                                <h1 class="projects__title">Travel Website</h1>
+                                <a href="#" class="projects__button">Demo <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="projects__content swiper-slide">
+                            <img src="PORTFOLIO-.png" alt="projects image" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">front-end</span>
+                                <h1 class="projects__title">Portfolio Website</h1>
+                                <a href="#" class="projects__button">Demo <i class="ri-arrow-right-line"></i></a>
+                            </div>
+                        </div>
+                        <div class="projects__content swiper-slide">
+                            <img src="MOVIES_.png" alt="projects image" class="projects__img">
+                            <div>
+                                <span class="projects__subtitle">front-end</span>
+                                <h1 class="projects__title">Movies Website</h1>
+                                <a href="#" class="projects__button">Demo <i class="ri-arrow-right-line"></i></a>
                             </div>
                         </div>
                     </div>
-                    
-                    <div>              
-                        <img src="assets/img/resume.jpg" alt="" class="skills__img">
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title"><i class="ri-chat-3-line"></i> Text me</h3>
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">contactme@gmail.com</span>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">WhatsApp</span>
+                            <span class="contact__data-info">+xxxxxxxxxx</span>
+                            <a href="#" target="_blank" class="contact__button">Text me <i
+                                    class="ri-arrow-right-line"></i></a>
+                        </div>
+                        <div class="contact__data">
+                            <span class="contact__data-title">Telegram</span>
+                            <span class="contact__data-info">https://t.me/contactme</span>
+                            <a href="https://t.me/kritikmodi" target="_blank" class="contact__button">Join <i
+                                    class="ri-arrow-right-line"></i></a>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
-<p style="text-align: center;">{Click on images to read my blogs}</p>
-
-                <div class="work__container bd-grid">
-                    <a href="https://bugslayer.hashnode.dev/github-api-integration-project-automating-github" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="https://bugslayer.hashnode.dev/my-journey-to-devops-building-an-aws-resource-tracker-with-shell-scripting-and-aws-cli" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="https://bugslayer.hashnode.dev/starting-my-devops-journey-with-linux-basic-commands" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
-                </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                      <!--  <input type="text" placeholder="Name" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input">
-                        -->
-                        <input type="mail" placeholder="azharuddinmallick@gmail.com" class="contact__input">
-                    </textarea>
-                   <!--     <input type="button" value="Enter" class="contact__button button">-->
+                <div class="contact__content">
+                    <h3 class="contact__title"><i class="ri-send-plane-line"></i> Have a query for me?</h3>
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Name</label>
+                            <input type="text" name="user_name" required placeholder="Your name"
+                                class="contact__form-input" id="contact-name">
+                        </div>
+                        <div class="contact__form-div">
+                            <label class="contact__form-tag">Email</label>
+                            <input type="email" name="user_email" required placeholder="Your email"
+                                class="contact__form-input" id="contact-email">
+                        </div>
+                        <div class="contact__form-div contact__form-area">
+                            <label class="contact__form-tag">Message</label>
+                            <textarea name="user_project" placeholder="Ask me something?" id="contact-project"
+                                class="contact__form-input"></textarea>
+                        </div>
+                        <p class="contact__message" id="contact-message"></p>
+                        <button type="submit" class="contact__button">Send <i
+                                class="ri-arrow-right-up-line"></i></button>
                     </form>
                 </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Azhar</p>
-            <div class="footer__social">
-               <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="https://x.com/Anujjjjj_0" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
-            <p class="footer__copy">&#169;  All rigths reserved</p>
-        </footer>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Abhi Ram Tej</h1>
+            <p>Frontend Developer</p>
+            <ul class="footer__list">
+                <li><a href="#home" class="footer__link">Home</a></li>
+                <li><a href="#skills" class="footer__link">Skills</a></li>
+                <li><a href="#projects" class="footer__link">Projects</a></li>
+            </ul>
+            <ul class="footer__social">
+                <a href="#" target="_blank" class="footer__social-link"><i class="ri-linkedin-box-line"></i></a>
+                <a href="#" target="_blank" class="footer__social-link"><i class="ri-github-line"></i></a>
+                <a href="#" target="_blank" class="footer__social-link"><i class="ri-twitter-line"></i></a>
+            </ul>
+            <span class="footer__copy">© Copyright. All rights reserved.</span>
+        </div>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 
-
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
