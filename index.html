@@ -27,6 +27,23 @@
           0%, 100% { opacity: 1; }
           50% { opacity: 0; }
         }
+        .resume-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #333; /* Black background */
+            color: #ccc; /* Gray text */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .resume-button:hover {
+            background-color: #555; /* Slightly lighter black for hover effect */
+            color: #fff; /* White text on hover */
+        }
       </style>
 </head>
 
@@ -121,34 +138,55 @@
             <span class="section__subtitle">Experience</span>
             <div class="skills__container container grid section__border">
                 <div class="skills__content">
-                    <h3 class="skills__title"><i class="ri-braces-line"></i> Software Developer</h3>
+                    <h3 class="skills__title"><i class="ri-braces-line"></i> Web Developer</h3>
                     <div class="skills__info">
                         <div class="skills__data">
                             <div class="skills__blob">
                                 <img src="assets/img/icons8-java-120.svg" alt="skills image">
                             </div>
-                            <h3 class="skills__name">Java</h3>
+                            <h3 class="skills__name">HTML</h3>
                             <span class="skills__subtitle">Advanced</span>
                         </div>
                         <div class="skills__data">
                             <div class="skills__blob">
                                 <img src="assets/img/icons8-android-studio-100.svg" alt="skills image">
                             </div>
-                            <h3 class="skills__name">Android</h3>
+                            <h3 class="skills__name">CSS</h3>
                             <span class="skills__subtitle">Intermediate</span>
                         </div>
                         <div class="skills__data">
                             <div class="skills__blob">
                                 <img src="assets/img/icons8-flutter-120.svg" alt="skills image">
                             </div>
-                            <h3 class="skills__name">Flutter</h3>
+                            <h3 class="skills__name">Tailwind</h3>
                             <span class="skills__subtitle">Intermediate</span>
                         </div>
                         <div class="skills__data">
                             <div class="skills__blob">
                                 <img src="assets/img/icons8-google-firebase-console-120.svg" alt="skills image">
                             </div>
-                            <h3 class="skills__name">Firebase</h3>
+                            <h3 class="skills__name">NodeJS</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">ReactJS</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">MongoDB</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">PostgreSQL</h3>
                             <span class="skills__subtitle">Intermediate</span>
                         </div>
                         <div class="skills__data">
@@ -156,8 +194,15 @@
                                 <img src="assets/img/git-icon.svg" alt="skills image">
                             </div>
                             <h3 class="skills__name">Git</h3>
-                            <span class="skills__subtitle">Advanced</span>
+                            <span class="skills__subtitle">Intermediate</span>
                         </div>
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/git-icon.svg" alt="skills image">
+                            </div>
+                            <h3 class="skills__name">Github</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>                        
                     </div>
                 </div>
                 <div class="skills__content">
@@ -175,7 +220,7 @@
                                 <img src="assets/img/icons8-plugin-100.png" alt="skills image">
                             </div>
                             <h3 class="skills__name">OOPS</h3>
-                            <span class="skills__subtitle">Advanced</span>
+                            <span class="skills__subtitle">Intermediate</span>
                         </div>
                         <div class="skills__data">
                             <div class="skills__blob">
@@ -196,10 +241,11 @@
                                 <img src="assets/img/icons8-multicast-100.png" alt="skills image">
                             </div>
                             <h3 class="skills__name">CN</h3>
-                            <span class="skills__subtitle">Advanced</span>
+                            <span class="skills__subtitle">Intermediate</span>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
         <section class="qualification section" id="qualification">
@@ -255,25 +301,25 @@
             <div class="achievements__container container grid section__border">
                 <div class="achievements__card">
                     <i class="ri-trophy-line"></i>
-                    <h2 class="achievements__title">Winner <br> Summer Amazon Hackathon</h2>
-                    <p class="achievements__description">Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
+                    <h2 class="achievements__title">Participated <br> CTF by LPU</h2>
+                    <p class="achievements__description">Participated in CTF which was a Cyber Security based Hackathon organized by Technocean.
                     </p>
                     <div class="achievements__border"></div>
                 </div>
                 <div class="achievements__card">
                     <i class="ri-trophy-line"></i>
-                    <h2 class="achievements__title">Winner <br> Summer Amazon Hackathon</h2>
-                    <p class="achievements__description">Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
+                    <h2 class="achievements__title">Participated <br> BlockBash Hackathon</h2>
+                    <p class="achievements__description">Participated in Blockbash Hackathon which is a blockchain based hackathon.
                     </p>
                     <div class="achievements__border"></div>
                 </div>
-                <div class="achievements__card">
+                <!-- <div class="achievements__card">
                     <i class="ri-trophy-line"></i>
                     <h2 class="achievements__title">Winner <br> Summer Amazon Hackathon</h2>
                     <p class="achievements__description">Won Summer Amazon Hackathon, the biggest hackathon of Amazon.
                     </p>
                     <div class="achievements__border"></div>
-                </div>
+                </div> -->
             </div>
         </section>
         <section class="projects section" id="projects">
@@ -378,10 +424,11 @@
                 <li><a href="#projects" class="footer__link">Projects</a></li>
             </ul>
             <ul class="footer__social">
-                <a href="#" target="_blank" class="footer__social-link"><i class="ri-linkedin-box-line"></i></a>
-                <a href="#" target="_blank" class="footer__social-link"><i class="ri-github-line"></i></a>
+                <a href="https://www.linkedin.com/in/azhar-uddin-mallick-10489a258/" target="_blank" class="footer__social-link"><i class="ri-linkedin-box-line"></i></a>
+                <a href="https://github.com/azharuddinmallick" target="_blank" class="footer__social-link"><i class="ri-github-line"></i></a>
                 <a href="#" target="_blank" class="footer__social-link"><i class="ri-twitter-line"></i></a>
             </ul>
+            <a href="path/to/your/resume.pdf" download="Azhar_Uddin_Mallick_Resume" class="resume-button">Download Resume</a>
             <span class="footer__copy">© Copyright. All rights reserved.</span>
         </div>
     </footer>
