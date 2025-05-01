@@ -9,6 +9,25 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Azhar Uddin Mallick</title>
+    <style>
+        #animated-role {
+          font-weight: bold;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      
+        #cursor {
+          display: inline-block;
+          color: #000;
+          animation: blink 0.7s infinite;
+          font-weight: bold;
+        }
+      
+        @keyframes blink {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0; }
+        }
+      </style>
 </head>
 
 <body>
@@ -52,7 +71,7 @@
         <section class="home section" id="home">
             <div class="home__container container grid section__border">
                 <div class="home__data grid">
-                    <h1 class="home__title">Hi, I'm Abhi Ram <br> Frontend Developer <br> Based in Russia <br></h1>
+                    <h1 class="home__title">Hi, I'm Azhar Uddin Mallick <br><span id="animated-role" class="typed-text"></span><span id="cursor">|</span></h1>
                     <div class="home__blob grid">
                         <div class="home__perfil">
                             <img src="PF.jpg" alt="home perfil">
@@ -374,6 +393,37 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        const roles = ["Frontend Developer", "ML Enthusiast", "AI Explorer"];
+        const roleEl = document.getElementById('animated-role');
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let typingSpeed = 100;
+        let pauseBetweenRoles = 1500;
+      
+        function typeEffect() {
+          const currentRole = roles[roleIndex];
+          if (isDeleting) {
+            roleEl.textContent = currentRole.substring(0, charIndex--);
+          } else {
+            roleEl.textContent = currentRole.substring(0, charIndex++);
+          }
+      
+          if (!isDeleting && charIndex === currentRole.length) {
+            isDeleting = true;
+            setTimeout(typeEffect, pauseBetweenRoles);
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            setTimeout(typeEffect, 300);
+          } else {
+            setTimeout(typeEffect, isDeleting ? 50 : typingSpeed);
+          }
+        }
+      
+        typeEffect();
+      </script>
 </body>
 
 </html>
