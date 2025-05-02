@@ -421,10 +421,19 @@
                 <a href="https://github.com/azharuddinmallick" target="_blank" class="footer__social-link"><i class="ri-github-line"></i></a>
                 <a href="#" target="_blank" class="footer__social-link"><i class="ri-twitter-line"></i></a>
             </ul>
-            <a href="/assets/AzharCVNew.pdf" download="Azhar_Uddin_Mallick_Resume" class="resume-button" target="_blank" rel="noopener">
-                📄 Download Resume
-              </a>
-                          <span class="footer__copy">© Copyright. All rights reserved.</span>
+            <a href="#" onclick="downloadResume()" class="resume-button">📄 Download Resume</a>
+
+            <script>
+              function downloadResume() {
+                const link = document.createElement('a');
+                link.href = '/assets/AzharCVNew.pdf';
+                link.download = 'Azhar_Uddin_Mallick_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }
+            </script>
+            <span class="footer__copy">© Copyright. All rights reserved.</span>
         </div>
     </footer>
     <a href="#" class="scrollup" id="scroll-up">
